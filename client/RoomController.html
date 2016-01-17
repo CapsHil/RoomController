@@ -1,0 +1,21 @@
+<head>
+  <title>RoomController</title>
+</head>
+ 
+<body>
+  <div class="container">
+    <header>
+      <h1>RoomController</h1>
+    </header>
+ 
+    <ul>
+      {{#each interuptors}}
+        {{> interuptor}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+ 
+<template name="interuptor">
+  <div class="btn-red" id={{_id}}>{{title}}</div>
+</template>
